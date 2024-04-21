@@ -55,10 +55,13 @@ int [] intArrayf = new int[3];
             System.out.println(Arrays.toString(newline));
     }
         System.out.println("Task 3.1");
-String str = "Hello word!";
+String str = "Hello world!";
         System.out.println(str.charAt(0));
         System.out.println(str.charAt(str.length()-1));
-        char[] chararray = {'w', 'o', 'r', 'l', 'd'};
+        int firsti = str.indexOf("world");
+        int lasti = firsti + "world".length();
+        String addstring = str.substring(firsti, lasti);
+        char[] chararray = addstring.toCharArray();
         System.out.println(Arrays.toString(chararray));
         System.out.println(chararray[chararray.length - 2]);
 
